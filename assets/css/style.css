@@ -1,6 +1,20 @@
 /*
     Estilo para página de index.html
 */
+ /* header{
+     background-color: #FFFC00;
+     text-align: center;
+     margin: 0;
+     padding: 20px;
+ }
+  */
+    
+     body{
+        background-image: linear-gradient(to right,#FFFC00,#1DA1F2,#00FA9A);
+        height: 100px;
+        margin:0;
+        padding: 0;
+ }
     .center {
 
     text-align: center;
