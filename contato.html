@@ -33,24 +33,25 @@
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.357171747107!2d-46.63717358502227!3d-23.55561228468578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce598421a6f18b%3A0x1034a05e6431909e!2sWe%20Coffee!5e0!3m2!1spt-PT!2sbr!4v1644513171559!5m2!1spt-PT!2sbr"
-                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()"   id='mapa'></iframe>
 
         </div>
         <div>
             <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup='validaNome()'>
+                <div id='txtNome'></div>
                 <br>
                 <label for="email">E-mail:</label><br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div id='txtEmail'></div>
                 <br>
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="50" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="50" rows="5"onkeyup='validaAssunto()'></textarea>
+                <div id='txtAssunto'></div>
                 <br>
                 <br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
             </form>
         </div>
     </div>
